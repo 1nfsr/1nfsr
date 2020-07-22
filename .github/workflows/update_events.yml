@@ -11,7 +11,7 @@ jobs:
     steps:
     - name: Check out repo
       uses: actions/checkout@v2
-      uses: actions/setup-go@v2
+    - uses: actions/setup-go@v2
     - name: Fetch events
       run: go run main.go
     - name: Commit and push
