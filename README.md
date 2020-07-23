@@ -9,7 +9,7 @@
 ### 我的 2020 年计划
 
 - [x] test
-- [] test1
+- [ ] test1
 
 <!--events start -->
 
