@@ -85,7 +85,7 @@ func main() {
 
 		url := evt["url"].(string)
 		content := evt["content"].(string)
-		buf.WriteString("==> " + emoji + " [" + title + "](" + url + ")\n\n" + "  > " + content + "\n")
+		buf.WriteString(" " + emoji + " [" + title + "](" + url + ")\n\n" + "  > " + content + "\n")
 	}
 	buf.WriteString("\n\n")
 
