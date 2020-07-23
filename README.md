@@ -5,6 +5,12 @@
  [Blog](https://infsr.me)
 
 <hr />
+
+### 我的 2020 年计划
+
+- [x] test
+- [] test1
+
 <!--events start -->
 
 ### 我在黑客派的近期动态
