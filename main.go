@@ -36,7 +36,7 @@ func main() {
 	buf.WriteString("\n\n")
 	cstSh, _ := time.LoadLocation("Asia/Shanghai")
 	updated := time.Now().In(cstSh).Format("2006-01-02 15:04:05")
-	buf.WriteString("### 我在黑客派的近期动态\n\n - 最近更新时间：`" + updated + "`\n\n📝 帖子 &nbsp; 💬 评论 &nbsp; 🗣 回帖 &nbsp; 🌙 清月 &nbsp; 👨‍💻 用户 &nbsp; 🏷️ 标签 &nbsp; ⭐️ 关注 &nbsp; 👍 赞同 &nbsp; 💗 感谢 &nbsp; 💰 打赏 &nbsp; 🗃 收藏\n\n")
+	buf.WriteString("### 我在黑客派的近期动态\n\n  **最近更新时间**：`" + updated + "`\n\n📝 帖子 &nbsp; 💬 评论 &nbsp; 🗣 回帖 &nbsp; 🌙 清月 &nbsp; 👨‍💻 用户 &nbsp; 🏷️ 标签 &nbsp; ⭐️ 关注 &nbsp; 👍 赞同 &nbsp; 💗 感谢 &nbsp; 💰 打赏 &nbsp; 🗃 收藏\n\n")
 	for _, event := range result["data"].([]interface{}) {
 		evt := event.(map[string]interface{})
 		operation := evt["operation"].(string)
@@ -85,7 +85,7 @@ func main() {
 
 		url := evt["url"].(string)
 		content := evt["content"].(string)
-		buf.WriteString("* " + emoji + " [" + title + "](" + url + ")\n\n" + "  > " + content + "\n")
+		buf.WriteString("==> " + emoji + " [" + title + "](" + url + ")\n\n" + "  > " + content + "\n")
 	}
 	buf.WriteString("\n\n")
 
