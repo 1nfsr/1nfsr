@@ -11,9 +11,8 @@
 
 ### 我的 2020 年 阅读清单
 
-- [ ] ...
+- [ ] 
 
-Nothing in here
 
 <!--events start -->
 <!--events end -->
