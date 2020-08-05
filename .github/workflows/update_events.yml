@@ -29,7 +29,8 @@ jobs:
         git config --global user.email "bot@github.com"
         git config --global user.name "Bot"
         git diff
-        git pull --rebase origin master
+        git pull --rebase --autostash
+        git fetch && git merge --ff-only origin/master
         git add .
         git commit -m ":memo: 更新自述" || exit 0
         git push
