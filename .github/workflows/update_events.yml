@@ -3,13 +3,17 @@ name: Update events
 on:
   repository_dispatch:
     types: [github.repository]
-  release:
-    types: published
-  push:
-   branches:
-     - master
-   paths:
-     - 'README.md'
+#  release:
+#    types: published
+
+#  push:
+#   branches:
+#     - master
+#   paths:
+#     - 'README.md'
+  
+#  watch:
+#    types: [started]
 
   schedule:
     - cron: 0 20 1 * *
@@ -19,11 +23,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Check out repo
+    - name: check out repo
       uses: actions/checkout@v2
-    - uses: actions/setup-go@v2
-    - name: Fetch events
-      run: go run main.go
     - name: Commit and push
       run: |
         git config --global user.email "bot@github.com"
@@ -32,5 +33,5 @@ jobs:
         git pull --rebase --autostash
         git fetch && git merge --ff-only origin/master
         git add .
-        git commit -m ":memo: 更新自述" || exit 0
+        git commit -m "update" || exit 0
         git push
