@@ -8,7 +8,7 @@ on:
 
 #  push:
 #   branches:
-#     - master
+#     - main
 #   paths:
 #     - 'README.md'
   
@@ -28,7 +28,7 @@ jobs:
     - name: Commit and push
       run: |
         git config --global user.email "bot@github.com"
-        git config --global user.name "Bot"
+        git config --global user.name "Assistant-Bot"
         git diff
         git pull --rebase --autostash
         git fetch && git merge --ff-only origin/master
