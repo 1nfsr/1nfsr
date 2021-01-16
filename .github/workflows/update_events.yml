@@ -31,7 +31,7 @@ jobs:
         git config --global user.name "Assistant-Bot"
         git diff
         git pull --rebase --autostash
-        git fetch && git merge --ff-only origin/master
+        git fetch && git merge --ff-only origin/main
         git add .
         git commit -m "update" || exit 0
         git push
