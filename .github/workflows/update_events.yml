@@ -19,7 +19,7 @@ jobs:
       GIST_ID: 732b002644cd2f71dd6d67a460f72305
       STEAM_API_KEY: ${{ secrets.STEAM_API_KEY }}
       STEAM_ID: ${{ secrets.STEAM_ID }}
-      UPDATE_OPTION: GIST_AND_MARKDOWN
+      UPDATE_OPTION: MARKDOWN
       MARKDOWN_FILE: README.md
 
     steps:
@@ -33,7 +33,7 @@ jobs:
       - uses: actions/setup-go@v2
       - name: Clone and run steam-box
         run: |-
-          git clone https://github.com/YouEclipse/steam-box.git 
+          git clone https://github.com/1nfsr/1nfsr.git 
           cd steam-box && go build -o steam ./cmd/box/main.go
           mv ./steam ../ && cd .. && rm -rf steam-box/
       - name: Commit and push
