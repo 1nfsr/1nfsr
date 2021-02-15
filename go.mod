@@ -1,4 +1,4 @@
-module github.com/journey-ad/steam-box
+module github.com/1nfsr/1nfsr/pkg/steam-box
 
 go 1.14
 
