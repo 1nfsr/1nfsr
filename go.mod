@@ -1,4 +1,4 @@
-module github.com/1nfsr/1nfsr/tree/main/pkg/steambox
+module github.com/1nfsr/1nfsr/pkg/steambox
 
 go 1.14
 
