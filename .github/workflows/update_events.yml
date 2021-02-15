@@ -33,3 +33,11 @@ jobs:
       
     - name: Update-gist
       run:  go run ./cmd/box/main.go
+
+    - name: Commit and push
+      run: |-
+        ./steam
+        git config --global user.email "bot@github.com" && git config --global user.name "Steam-Bot"
+        git diff
+        git add README.md && git commit -m ":memo: update profile" || exit 0
+        git pull && git push
