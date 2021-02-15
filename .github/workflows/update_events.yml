@@ -1,37 +1,35 @@
-name: Update events
+name: Update gist with Steam Playtime
 
 on:
-  repository_dispatch:
-    types: [github.repository]
-#  release:
-#    types: published
-
-#  push:
-#   branches:
-#     - main
-#   paths:
-#     - 'README.md'
-  
-#  watch:
-#    types: [started]
-
+  push:
+    branches: 
+      - main
+  pull_request:
+    branches:
+      - main
   schedule:
-    - cron: 0 20 1 * *
+    - cron: "0 * * * *"
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
 
+  build:
+    name: Upddate-gist
+    runs-on: ubuntu-latest
+    env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GIST_ID: 732b002644cd2f71dd6d67a460f72305
+          STEAM_API_KEY: ${{ secrets.STEAM_API_KEY }}
+          STEAM_ID: ${{ secrets.STEAM_ID }}
     steps:
-    - name: check out repo
+
+    - name: Set up Go 1.x
+      uses: actions/setup-go@v2
+      with:
+        go-version: ^1.14
+      id: go
+
+    - name: Check out code into the Go module directory
       uses: actions/checkout@v2
-    - name: Commit and push
-      run: |
-        git config --global user.email "bot@github.com"
-        git config --global user.name "Assistant-Bot"
-        git diff
-        git pull --rebase --autostash
-        git fetch && git merge --ff-only origin/main
-        git add .
-        git commit -m "update" || exit 0
-        git push
+      
+    - name: Update-gist
+      run:  go run ./cmd/box/main.go
