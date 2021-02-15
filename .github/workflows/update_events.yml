@@ -34,8 +34,8 @@ jobs:
       - name: Clone and run steam-box
         run: |-
           git clone https://github.com/1nfsr/1nfsr.git 
-          cd steam-box && go build -o steam ./cmd/box/main.go
-          mv ./steam ../ && cd .. && rm -rf steam-box/
+          cd 1nfsr && go build -o steam ./cmd/box/main.go
+          mv ./steam ../ && cd .. && rm -rf 1nfsr/
       - name: Commit and push
         run: |-
           ./steam
