@@ -1,4 +1,4 @@
-module github.com/1nfsr/1nfsr/pkg/steambox
+module github.com/YouEclipse/steam-box/pkg/steambox
 
 go 1.14
 

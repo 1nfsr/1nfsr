@@ -8,7 +8,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/1nfsr/1nfsr/pkg/steambox"
+	"github.com/YouEclipse/steam-box/pkg/steambox"
 	"github.com/google/go-github/github"
 )
 
