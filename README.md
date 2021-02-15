@@ -7,7 +7,7 @@
 <hr />
 
 <!-- steam-box start -->
-#### - Steam playtime leaderboard
+#### - 最近玩过的游戏
 ```text
 🎮 This War of Mine                  🕘 0 hrs 2 mins
 ```
