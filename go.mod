@@ -1,4 +1,4 @@
-module github.com/YouEclipse/steam-box/pkg/steambox
+module github.com/journey-ad/steam-box
 
 go 1.14
 
