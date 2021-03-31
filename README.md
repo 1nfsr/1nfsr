@@ -2,25 +2,21 @@
 
 ### Know it then Hack it.
 
-<br />
-<br />
-<br />
-<hr />
+*
+---
+*
+---
+
+- - - - - -
+
 
 ### Platform
-<br />
-<br />
 
 [![](https://img.shields.io/badge/MacOS-Catalina-33aadd?style=for-the-badge&logo=apple)](https://www.apple.com/macos/catalina-preview)
-<br />
-[![](https://img.shields.io/badge/iphone-6-black?style=for-the-badge&logo=apple)](https://www.apple.com/iphone/)
-<br />
-<br />
-<br />
+
+[![](https://img.shields.io/badge/iphone-6-black?style=for-the-badge&logo=apple)](https://www.apple.com/iphone-6/)
 
 ### Game
-<br />
-<br />
 
 [![](https://img.shields.io/badge/Steam-171a21?style=for-the-badge&logo=steam)](https://steamcommunity.com/id/infsr/)
 
