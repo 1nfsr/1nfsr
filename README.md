@@ -23,7 +23,7 @@
 <!-- steam-box start -->
 #### - 最近玩过的游戏
 ```text
-🎮 Dota 2                            🕘 26 hrs 43 mins
+🎮 Dota 2                            🕘 27 hrs 44 mins
 🎮 This War of Mine                  🕘 0 hrs 3 mins
 ```
 <!-- Powered by https://github.com/YouEclipse/steam-box . -->
