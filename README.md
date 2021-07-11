@@ -13,7 +13,7 @@
 ### Platform
 
 [![](https://img.shields.io/badge/MacOS-Catalina-33aadd?style=for-the-badge&logo=apple)](https://www.apple.com/macos/catalina-preview)
-[![](https://img.shields.io/badge/Pixel-3-33aadd?style=for-the-badge&logo=apple)](https://en.wikipedia.org/wiki/Pixel_3)
+[![](https://img.shields.io/badge/Pixel-3-33aadd?style=for-the-badge&logo=google)](https://en.wikipedia.org/wiki/Pixel_3)
 
 ### Game
 
