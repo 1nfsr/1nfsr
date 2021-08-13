@@ -23,7 +23,7 @@
 <!-- steam-box start -->
 #### - 最近玩过的游戏
 ```text
-🎮 This War of Mine                  🕘 1 hrs 18 mins
+🎮 This War of Mine                  🕘 2 hrs 47 mins
 ```
 <!-- Powered by https://github.com/YouEclipse/steam-box . -->
 <!-- steam-box end -->
