@@ -10,6 +10,8 @@ on:
         description: 'Name of workflow to delete from'
         required: true
         default: 'status'
+  schedule:
+    - cron: "1 */2 * * *"
 
 jobs:
   del_runs:
