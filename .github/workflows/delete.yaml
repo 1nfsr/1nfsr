@@ -5,11 +5,11 @@ on:
       minimumRunsToKeep:
         description: 'Number of workflow runs to keep'
         required: true
-        default: 10
+        default: 1
       workflowName:
         description: 'Name of workflow to delete from'
         required: true
-        default: 'Builds'
+        default: 'status'
 
 jobs:
   del_runs:
