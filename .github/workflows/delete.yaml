@@ -1,11 +1,11 @@
-name: Delete old runs for specific work flow
+name: delete
 on:
   workflow_dispatch:
     inputs:
       minimumRunsToKeep:
         description: 'Number of workflow runs to keep'
         required: true
-        default: 12
+        default: 6
       workflowName:
         description: 'Name of workflow to delete from'
         required: true
