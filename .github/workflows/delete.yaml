@@ -5,7 +5,7 @@ on:
       minimumRunsToKeep:
         description: 'Number of workflow runs to keep'
         required: true
-        default: 12
+        default: 15
       workflowName:
         description: 'Name of workflow to delete from'
         required: true
